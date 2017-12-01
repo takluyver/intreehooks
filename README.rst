@@ -12,7 +12,7 @@ built by itself. To use it, write a pyproject.toml like this:
 
     [build-system]
     requires = ["intreehooks"]  # + any other packages required to build
-    build-backend = "intreehooks"
+    build-backend = "intreehooks:loader"
 
     [tool.intreehooks]
     build-backend = "flit.buildapi"  # Import path of your real backend

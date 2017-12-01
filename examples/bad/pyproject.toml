@@ -1,0 +1,6 @@
+[build-system]
+requires = ["intreehooks"]
+build-backend = "intreehooks:loader"
+
+[tool.intreehooks]
+build-backend = "posixpath"

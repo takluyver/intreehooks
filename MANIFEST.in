@@ -1,1 +1,4 @@
 include README.rst
+include test_intreehooks.py
+graft examples
+global-exclude __pycache__ *.pyc
