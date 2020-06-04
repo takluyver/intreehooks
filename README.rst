@@ -1,7 +1,11 @@
 Load a PEP 517 backend from within the source tree.
 
-In `PEP 517 <https://www.python.org/dev/peps/pep-0517/>`_, package building
-backends are not loaded from the source of the package being built. This
+This is **obsolete** now, because a ``backend-path`` key was added
+to PEP 517, allowing it to `use in-tree backends natively
+<https://www.python.org/dev/peps/pep-0517/#in-tree-build-backends>`_.
+
+Before that, in `PEP 517 <https://www.python.org/dev/peps/pep-0517/>`_, package building
+backends could not be loaded from the source of the package being built. This
 prevents accidentally shadowing your build system, but some packages, like
 build tools, want to act as their own backend.
 
